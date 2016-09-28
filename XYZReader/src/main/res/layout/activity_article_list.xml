@@ -57,12 +57,14 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
         android:gravity="bottom"
         android:layout_height="112dp"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <android.support.design.widget.CollapsingToolbarLayout
             app:layout_scrollFlags="scroll|enterAlways"
+            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize">
 
@@ -76,6 +78,8 @@
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
             <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/app_name"
