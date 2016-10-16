@@ -21,8 +21,10 @@
                 <!--suppress AndroidLintContentDescription -->
                 <ImageView
                     android:id="@+id/photo"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:transitionName="@string/image_transition"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                      />
 
                 <View
@@ -46,7 +48,7 @@
                     android:id="@+id/meta_bar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#333"
+                    android:background="#FFFF"
                     android:layout_gravity="bottom"
                     android:orientation="vertical"
                     android:paddingLeft="@dimen/detail_inner_horiz_margin"
@@ -92,6 +94,7 @@
         </FrameLayout>
     </com.example.xyzreader.ui.ObservableScrollView>
 
+    <!--
     <ImageButton android:id="@+id/share_fab"
         android:stateListAnimator="@anim/fab_state_list_anim"
         android:background="@drawable/add_fab_background"
@@ -103,5 +106,26 @@
         android:src="@drawable/ic_share"
         android:elevation="@dimen/fab_elevation"
         android:contentDescription="@string/action_share" />
+    -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/share_fab"
+        android:stateListAnimator="@anim/fab_state_list_anim"
+        android:background="@drawable/add_fab_background"
+        android:layout_gravity="bottom|right|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_share"
+        android:contentDescription="@string/action_share"
+        android:layout_width="56dp"
+        android:elevation="@dimen/fab_elevation"
+        android:layout_height="56dp"/>
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
+
+<!--
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.design.widget.CoordinatorLayout>
+-->

@@ -11,6 +11,7 @@
         android:id="@+id/up_container"
         android:background="@android:color/transparent"
         android:layout_width="match_parent"
+        android:visibility="visible"
         android:layout_height="?actionBarSize">
 
         <ImageButton
@@ -23,3 +24,44 @@
             android:src="@drawable/ic_arrow_back" />
     </FrameLayout>
 </FrameLayout>
+
+<!--
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/up_container"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/image_scrim">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:id="@+id/action_up"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/up"
+                    android:src="@drawable/ic_arrow_back" />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.design.widget.CoordinatorLayout>
+-->
